@@ -1,6 +1,6 @@
-import styles from "@/app/page.module.css";
+import styles from "@/app/Home.module.css";
 
-export default function Home() {
+export default function Page() {
 	return (
 		<main className={styles.main}>
 			<h1 className={styles.title}>AmIOver18</h1>

@@ -1,8 +1,10 @@
 :root {
 	/* Colors */
-	--color-background: #0b1020;
+	--color-background: #f2f4fa;
+	--color-blue-eur: #013399;
+	--color-link: #ffcc00;
 	--color-surface: #151c33;
-	--color-text: #f2f4fa;
+	--color-text: #ffffff;
 	--color-text-muted: #9aa3bf;
 	--color-primary: #4f7cff;
 	--color-success: #2ecc71;
@@ -23,4 +25,75 @@
 
 	/* Shape */
 	--radius: 0.75rem;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: var(--color-background);
+	color: var(--color-text);
+	font-family: var(--font-sans), serif;
+	font-size: var(--font-size-base);
+	height: 100dvh;
+	line-height: 1.5;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.top-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10dvh;
+	background-color: var(--color-blue-eur);
+	color: var(--color-text);
+	font-size: var(--font-size-base);
+	font-weight: bold;
+	gap: var(--space-5);
+}
+
+.top-banner .banner-title {
+	margin: 0;
+	font-size: var(--font-size-title);
+	width: 20%;
+}
+
+.top-banner .banner-subtitle {
+	width: 50%;
+	margin: 0;
+	font-size: var(--font-size-base);
+}
+
+.top-banner a {
+	text-decoration: none;
+	color: var(--color-link);
+	cursor: pointer;
+}
+
+.bottom-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5dvh;
+	background-color: var(--color-blue-eur);
+	color: var(--color-text);
+	font-size: var(--font-size-base);
+	font-weight: bold;
+}
+
+.bottom-banner a {
+	text-decoration: none;
+	color: var(--color-link);
+	cursor: pointer;
 }
